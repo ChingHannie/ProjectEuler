@@ -1,0 +1,14 @@
+def fib(n):
+    if n==1 or n==2:
+        return 1
+    return fib(n-1) + fib(n-2)
+
+sum_terms = 0
+count = 1
+while fib(count) < 4000000:
+    x = fib(count)
+    if x%2==0:
+        sum_terms += x
+    count += 1
+
+print(sum_terms)
