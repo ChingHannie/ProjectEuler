@@ -1,0 +1,11 @@
+num = 600851475143
+prime = []
+
+count = 2 
+
+while count**2 < num:
+    while num%count==0:
+        num //= count
+    count += 1
+
+print(num)
